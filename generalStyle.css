@@ -17,30 +17,21 @@ section h2, #titleHeader h1 {
 #titleHeader {
   height: 50px;
   background-color: cadetblue;
+  margin-bottom: 0.2%;
 }
-
 #titleHeader h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
-#pagesMenu .parallelogram {
-  width: 60%;
-  height: 10%;
-  transform: skew(20deg);
-  background: transparent;
-  margin-left: 20%;
-  margin-right: 20%;
-}
 #pagesMenu a, #pagesMenu a:hover {
   text-transform: capitalize;
-  transform: skew(-20deg);
 }
 #pagesMenu table {
-  border-top: 5px solid cadetblue;
-  border-right: 5px solid cadetblue;
-  border-left: 5px solid cadetblue;
-  border-bottom: 5px solid cadetblue;
+  /* border-top: $tableBorderCaracteristics;
+   border-right: $tableBorderCaracteristics;
+   border-left: $tableBorderCaracteristics;
+   border-bottom: $tableBorderCaracteristics;*/
   width: 100%;
   border-collapse: separate;
 }
@@ -53,7 +44,7 @@ section h2, #titleHeader h1 {
   background-color: cadetblue;
 }
 #pagesMenu th {
-  border: 1.5px solid cadetblue;
+  /*border: 1.5px solid $mainSiteColor;*/
   margin: 0px 0px 0px;
   padding: 7px;
   text-align: center;
@@ -79,7 +70,7 @@ h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::s
 section h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: cadetblue;
-  margin-top: 2%;
+  margin-top: 2.3%;
 }
 
 /*# sourceMappingURL=generalStyle.css.map */

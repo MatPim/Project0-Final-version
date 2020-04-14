@@ -22,37 +22,30 @@ $tableBorderCaracteristics: 5px solid $mainSiteColor;
 #titleHeader{
     height: 50px;
     background-color: $mainSiteColor;
-    
-}
-#titleHeader{
+    margin-bottom: 0.2%;
     h1{
         @extend %titleDecoration;
         font-family: $mainFont;
         color: $secondSiteColor;
     }
-
 }
+
+ 
+
+
+
 #pagesMenu{
-    .parallelogram {
-       
-        width: 60%;
-        height: 10%;
-        transform: skew(20deg);
-        background: transparent;
-      
-        margin-left: 20%; 
-              margin-right: 20%;
-    }
+
     a, a:hover{
         @extend %linkMainDesign;
         text-transform: capitalize;
-        transform: skew(-20deg);
+        
     }
     table{
-        border-top: $tableBorderCaracteristics;
+       /* border-top: $tableBorderCaracteristics;
         border-right: $tableBorderCaracteristics;
         border-left: $tableBorderCaracteristics;
-        border-bottom: $tableBorderCaracteristics;
+        border-bottom: $tableBorderCaracteristics;*/
         width: 100%;
         border-collapse: separate;
        
@@ -70,7 +63,7 @@ $tableBorderCaracteristics: 5px solid $mainSiteColor;
     }
 
     th{
-        border: 1.5px solid $mainSiteColor;
+        /*border: 1.5px solid $mainSiteColor;*/
         margin: $marginOut;
         padding: 7px;
         text-align: center;
@@ -111,7 +104,7 @@ section{
         @extend %titleDecoration;
         font-family: $mainFont;
         color: $mainSiteColor;
-        margin-top: 2%;
+        margin-top: 2.3%;
     }
  
 }
