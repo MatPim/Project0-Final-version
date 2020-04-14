@@ -1,0 +1,85 @@
+#pagesMenu th:hover a, #pagesMenu th:hover {
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+#pagesMenu th:hover a, #pagesMenu th:hover, #pagesMenu a, #pagesMenu a:hover {
+  text-decoration: none;
+}
+
+section h2, #titleHeader h1 {
+  text-align: center;
+  padding-top: 1px;
+}
+
+#titleHeader {
+  height: 50px;
+  background-color: cadetblue;
+}
+
+#titleHeader h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#pagesMenu .parallelogram {
+  width: 60%;
+  height: 10%;
+  transform: skew(20deg);
+  background: transparent;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#pagesMenu a, #pagesMenu a:hover {
+  text-transform: capitalize;
+  transform: skew(-20deg);
+}
+#pagesMenu table {
+  border-top: 5px solid cadetblue;
+  border-right: 5px solid cadetblue;
+  border-left: 5px solid cadetblue;
+  border-bottom: 5px solid cadetblue;
+  width: 100%;
+  border-collapse: separate;
+}
+#pagesMenu .notChosed {
+  background-color: white;
+  color: cadetblue;
+}
+#pagesMenu .chosed {
+  color: white;
+  background-color: cadetblue;
+}
+#pagesMenu th {
+  border: 1.5px solid cadetblue;
+  margin: 0px 0px 0px;
+  padding: 7px;
+  text-align: center;
+  size: 20px;
+}
+#pagesMenu th:hover {
+  background-color: cadetblue;
+}
+#pagesMenu th:hover a {
+  background-color: cadetblue;
+  color: white;
+}
+
+body, h1 {
+  margin: 0px 0px 0px;
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, label::selection, a::selection {
+  background-color: gray;
+  color: white;
+}
+
+section h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: cadetblue;
+  margin-top: 2%;
+}
+
+/*# sourceMappingURL=generalStyle.css.map */
