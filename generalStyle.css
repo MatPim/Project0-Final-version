@@ -51,10 +51,10 @@ section h2, #titleHeader h1 {
   size: 20px;
 }
 #pagesMenu th:hover {
-  background-color: cadetblue;
+  background-color: deepskyblue;
 }
 #pagesMenu th:hover a {
-  background-color: cadetblue;
+  background-color: deepskyblue;
   color: white;
 }
 
@@ -71,6 +71,12 @@ section h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: cadetblue;
   margin-top: 2.3%;
+}
+section label {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 45%;
+  margin-left: 10%;
+  padding-left: 20%;
 }
 
 /*# sourceMappingURL=generalStyle.css.map */
