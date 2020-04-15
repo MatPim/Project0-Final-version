@@ -24,6 +24,9 @@ section h2, #titleHeader h1 {
   color: white;
 }
 
+#pagesMenu {
+  background-color: transparent;
+}
 #pagesMenu a, #pagesMenu a:hover {
   text-transform: capitalize;
 }

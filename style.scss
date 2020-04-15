@@ -35,7 +35,7 @@ $tableBorderCaracteristics: 5px solid $mainSiteColor;
 
 
 #pagesMenu{
-
+    background-color: transparent;
     a, a:hover{
         @extend %linkMainDesign;
         text-transform: capitalize;
