@@ -6,9 +6,58 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="generalStyle.css">
+    <link rel="stylesheet" href="style_page2and4.css">
     <style>
         #box4{
             background-color: cadetblue;
+        }
+        #mainTitles{
+          padding-bottom: 25%;
+          margin-top: 0.2%;
+          background-attachment: fixed;
+          height: 600px;
+          
+        }
+        #mainTitles h2{
+            width: 20%;
+            border-radius: 20px;
+            height: 200px;
+        }
+        #mainTitles h2:hover{
+            background-color: deepskyblue;
+            cursor: pointer;
+            color: white;
+            border-color: white;
+            transition-property: all;
+            transition-duration: 300ms;
+            transition-timing-function: linear;
+            transition-delay: 0s;
+        }
+         .selected_true{
+            background-color: white;
+            color: cadetblue;
+            border: 4px solid cadetblue;
+        }
+         .selected_false {
+            background-color: cadetblue;
+            color: white;
+            border: 4px solid white         ;
+            
+        }
+
+        .image1{
+            background-image: url(https://images.alphacoders.com/581/581842.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+            
+            
+        }
+        .image2{
+            background-image: url(https://wallpaperaccess.com/full/1134533.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            
         }
     </style>
 </head>
@@ -34,10 +83,85 @@
        
     </header>   
     <section>
+        <div id="title">
+            <div id="mainTitles">
+            
+            <h2 id="rightTitle" onclick="leftTtitleTouched()"  style="float: left; margin-left: 10%; padding-top: 65px;">Who am I?</h2>
+            <h2 id="leftTitle" onclick="rightTitleTouched()"  style="float: right; margin-right: 10%; padding: 2px; padding-top: 20px;">What are my skills?</h2>
 
+            </div>
+        </div>
+        <div id="content" ">
+            <h4 style="color: white; text-align: center;"></h4>
+            <label id="label1"></label>
+            <ul></ul>
+            
+        </div>
     </section>
     <footer>
 
     </footer>
+    <script>
+        const ulElement = document.querySelector('ul')
+        const divMainTitltes = document.querySelector('#mainTitles')
+        const h4Element = document.querySelector('h4')
+        const rightTitleElement = document.querySelector('#rightTitle')
+        const leftTitleElement = document.querySelector('#leftTitle')
+        const labelElement = document.querySelector('#label1')
+        const texts = {
+            'text1' : 'My name is Mateus, I live in São Paulo, Brazil and I am 15 years old. I always liked programmation and I have done many coding courses already, now I am doing a Harvard course to improve my coding skill, probably until now probably you are thinking that I am too young for this, but in my opinion I am just preparing me to the future. Now I already speak 3 languages: portuguese, english and spanish, and I am also learning deutch now. My average in school is very high and I am thinking of do a college outside Brazil, maybe in Harvard, with you that probably is reading this.',
+            'text2' : 'With only 15 years I can do many things like: '
+        }
+        
+
+
+        labelElement.textContent = texts.text1
+        h4Element.textContent = 'Who am I?'
+        divMainTitltes.setAttribute('class', 'image1')
+        leftTitleElement.removeAttribute('class')
+        leftTitleElement.setAttribute('class', 'selected_true')
+        rightTitleElement.removeAttribute('class')
+        rightTitleElement.setAttribute('class', 'selected_false')
+        
+        function rightTitleTouched(){
+
+
+            divMainTitltes.removeAttribute('class')
+            divMainTitltes.setAttribute('class', 'image2')
+            h4Element.textContent = 'My skills'
+            rightTitleElement.removeAttribute('class')
+            rightTitleElement.setAttribute('class', 'selected_true')
+            leftTitleElement.removeAttribute('class')
+            leftTitleElement.setAttribute('class', 'selected_false')
+            labelElement.textContent = texts.text2
+
+            const listElement = document.createElement('li')
+            const textOfTheList = document.createTextNode('Violino')
+            listElement.setAttribute('style', 'color: white;')
+            ulElement.appendChild(listElement)
+            listElement.appendChild(textOfTheList)
+            listElement.appendChild(liStyle)
+            
+        }
+        function leftTtitleTouched(){
+            divMainTitltes.removeAttribute('class')
+            divMainTitltes.setAttribute('class', 'image1')
+            h4Element.textContent = 'Who am I?'
+            leftTitleElement.removeAttribute('class')
+            leftTitleElement.setAttribute('class', 'selected_true')
+            rightTitleElement.removeAttribute('class')
+            rightTitleElement.setAttribute('class', 'selected_false')
+            labelElement.textContent = texts.text1
+            //===================useful in other cases===============//
+            //var attributeConfirm = divMainTitltes.hasAttribute('class')
+            //console.log('attribute confirm: class')
+            //if(divMainTitltes.hasAttribute('class') == true){
+            //    console.log('attribute created')
+            //}else{
+            //    console.log("atribute wasn't created")
+            //}
+            //console.log('second function actived', true)
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+
+#mainTitles h2{
+
+    font-weight: bolder;
+    font-size: 400%;
+
+}
+#content label{
+    color: white;
+    text-align: justify;
+    margin-left: 17%;
+}
+#content{
+    background-color: cadetblue;
+    padding: 3%;
+    height: 500px;
+}
